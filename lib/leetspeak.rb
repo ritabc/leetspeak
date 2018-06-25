@@ -10,6 +10,10 @@ class String
           letters_output_array.push("3")
         elsif letter === "I"
           letters_output_array.push("1")
+        elsif letter.downcase === "o"
+          letters_output_array.push("0")
+        elsif letter.downcase === "s"
+          letters_output_array.push("z")
         else
           letters_output_array.push(letter)
         end
