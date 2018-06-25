@@ -2,12 +2,12 @@ require('rspec')
 require('leetspeak')
 
 describe('String#leetspeak') do
-  it("returns a string when no leetspeak rules apply") do
-    expect("happy".leetspeak).to(eq("happy"))
+  it("returns a the original value when no leetspeak rules apply") do
+    expect("happy".leetspeak).to(eq(["happy"]))
   end
-  # it("takes a phrase or collection of sentences and breaks them apart by spaces") do
-  #   expect("the happy elephant".leetspeak).to(eq(["the", "happy", "elephant"]))
-  # end
+  it("takes a phrase or collection of sentences and breaks them apart by spaces") do
+    expect("the happy elephant".leetspeak).to(eq(["the", "happy", "elephant"]))
+  end
   # it("replaces every 'e' with '3'") do
   #   expect("elephant".leetspeak).to(eq("3l3phant"))
   # end
