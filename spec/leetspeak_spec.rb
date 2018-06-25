@@ -1,5 +1,6 @@
 require('rspec')
 require('leetspeak')
+require('pry')
 
 describe('String#leetspeak') do
   it("returns a the original value when no leetspeak rules apply") do
@@ -20,7 +21,7 @@ describe('String#leetspeak') do
   it("replaces every 's' in a string with a 'z'") do
     expect("roses".leetspeak).to(eq(["r0z3z"]))
   end
-  # it("does NOT replace the first letter when it is an s") do
-  #   expect("sassafrass".leetspeak).to(eq("sazzafrazz"))
-  # end
+  it("does NOT replace the first letter when it is an s") do
+    expect("sassafrass".leetspeak).to(eq(["sazzafrazz"]))
+  end
 end
