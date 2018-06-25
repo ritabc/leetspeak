@@ -26,6 +26,6 @@ class String
       end
       word_output_array.push(letters_output_array.join(""))
     end
-    word_output_array
+    word_output_array.join(" ")
   end
 end
