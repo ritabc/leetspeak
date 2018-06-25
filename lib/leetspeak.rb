@@ -8,6 +8,8 @@ class String
       letters_array.each do |letter|
         if letter.downcase === "e"
           letters_output_array.push("3")
+        # elsif letter === "I"
+        #   letters_output_array.push("1")
         else
           letters_output_array.push(letter)
         end
